@@ -1,0 +1,57 @@
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{{ url_for ('static', filename='stylesheet.css')}}">
+</head>
+<body>
+	<header>
+		S<i class="fa fa-futbol-o" style="font-size: 22px;"></i>ccer Formations
+	</header>
+	<main>
+		{% for key,parent_dict_item in team.items() %}
+		<div class="pitch">
+			<h4>Team {{ key }}</h4>
+			<div class="container">
+                <div class="pos-2" style="margin: 11px 380px">{{ parent_dict_item['keeper'][0] }}</div>
+                <div class="pos-2" style="margin: 74px 380px">{{ parent_dict_item['player'][0] }}</div>
+                <div class="pos-2" style="margin: 138px 380px">{{ parent_dict_item['player'][1] }}</div>
+                <div class="pos-2" style="margin: 202px 380px">{{ parent_dict_item['player'][2] }}</div>
+                <div class="pos-2" style="margin: 266px 380px">{{ parent_dict_item['player'][3] }}</div>
+                <div class="pos-2" style="margin: 330px 380px">{{ parent_dict_item['player'][4] }}</div>
+                <div class="pos-2" style="margin: 394px 380px">{{ parent_dict_item['player'][5] }}</div>
+
+				<div class="pos-point" style="margin: 11px 380px">1</div>
+				<div class="pos-point" style="margin: 74px 380px">2</div>
+				<div class="pos-point" style="margin: 138px 380px">3</div>
+				<div class="pos-point" style="margin: 202px 380px">4</div>
+				<div class="pos-point" style="margin: 266px 380px">5</div>
+				<div class="pos-point" style="margin: 330px 380px">6</div>
+				<div class="pos-point" style="margin: 394px 380px">7</div>
+
+                <div class="border">
+                    <div class="box1">
+                        <div class="pen1">
+                            <div class="pos" style="margin: 5px 15px;">1</div>
+                        </div>
+                    </div>
+                    
+                    <div class="pos" style="margin: 65px 126px;">2</div>
+                    <div class="pos" style="margin: 65px 186px">3</div>
+    
+                    <div class="pos" style="margin: 130px 53px">4</div>
+                    <div class="pos" style="margin: 130px 156px">5</div>
+                    <div class="pos" style="margin: 130px 258px">6</div>
+    
+                    <div class="pos" style="margin: 197px 156px;">7</div>
+    
+                    <div class="half"></div>
+                    <div class="box2">
+                        <div class="pen2"></div>
+                    </div>
+                </div>
+			</div>
+		</div>
+		{% endfor %}
+		</div>
+        </div>
+		<main>
+</body>

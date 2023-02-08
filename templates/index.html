@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+            7 VS 7 Minisoccer Player Generator
+    </title>
+</head>
+<style>
+    textarea{
+        font-size: medium;
+    }
+</style>
+<body style="background-color: #26A65B;">
+    <div class="container" style="padding: 390px; text-align: center; font-size: xx-large; font-family:'Times New Roman', Times, serif;">
+        7 VS 7 Minisoccer Player Generator
+        <div class="container">
+            <form name="add_data" action="/result" method="get">
+                <div class="row" style="margin-top: 10px;">
+                    <!-- <button type="submit" style="padding: 15px 32px; 
+                        font-size: 16px; text-align: center;
+                        font-family: 'Times New Roman', Times, serif; border-radius: 15px;">Yall! Better press me {{ name }}</button> -->
+                        <textarea name="player" id="player" cols="30" rows="10" placeholder="Nama Pemain" >Brock 
+Gale 
+Gustavo 
+Hank 
+Hector
+Holly 
+Jane 
+Jesse 
+Marie 
+Mike 
+Pete
+Saul</textarea>
+                    </div>
+                    <div class="row" style="margin-top: 10px;">
+                        <!-- <button type="submit" style="padding: 15px 32px; 
+                            font-size: 16px; text-align: center;
+                            font-family: 'Times New Roman', Times, serif; border-radius: 15px;">Yall! Better press me {{ name }}</button> -->
+                            <textarea name="keeper" id="keeper" cols="30" rows="5" placeholder="Nama Kiper">
+Todd 
+Walter
+                            </textarea>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                            <button type="submit" value="generate" style="padding: 15px 32px; 
+                                font-size: 16px; text-align: center;
+                                font-family: 'Times New Roman', Times, serif; border-radius: 15px;">Generate Player</button>
+                </div>
+            </form>
+        </div>    
+    </div>
+</div>
+</body>
+</html>
