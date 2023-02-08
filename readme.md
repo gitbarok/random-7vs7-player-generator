@@ -12,5 +12,6 @@ or you can accsess thru this link: http://7vs7generator.pythonanywhere.com
 ## Player Form
 ![Player Form](docs/index.png)
 
+Credit to [Jonathan Pier for formations UI](https://codepen.io/JonathanPier/pen/JGRpBJ)
 ## Random Formations
 ![Player Form](docs/formations.png)
