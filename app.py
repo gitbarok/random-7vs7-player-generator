@@ -2,16 +2,6 @@ import random
 from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
-
-@app.errorhandler(500)
-def page_not_found(e):
-    # note that we set the 404 status explicitly
-    return render_template('index.html')
-
-@app.errorhandler(404)
-def page_not_found(e):
-    # note that we set the 404 status explicitly
-    return render_template('index.html')
  
 @app.route('/')
 def form():
@@ -51,6 +41,15 @@ def get_value():
     # return team
     return render_template('formations.html', team=team)
 
+@app.errorhandler(500)
+def page_not_found(e):
+    # note that we set the 500 status explicitly
+    return render_template('index.html')
+
+@app.errorhandler(404)
+def page_not_found(e):
+    # note that we set the 404 status explicitly
+    return render_template('index.html')
 
 
 if __name__ == "__main__":
